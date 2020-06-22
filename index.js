@@ -167,11 +167,16 @@ plus.addEventListener('click', (e) => {
     <th scope="row">#</th>
     <td colspan="2"> Here is yourFinal Total</td>
     <td>${sum}</td>
+  </tr>
+  <tr>
+    <th scope="row"></th>
+    <td colspan="2"></td>
+    <td></td>
   </tr>`;
         // let tbval = getElementfromString(tbstr);
         tbody.innerHTML += tbstr;
         setTimeout(() => {
             window.location.reload();
-        }, 8000);
+        }, 10000);
     })
 })
