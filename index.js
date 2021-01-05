@@ -92,14 +92,14 @@ plus.addEventListener('click', (e) => {
         <input type="number" class="form-control" id="rate${addednum+2}" placeholder="Enter the rate for item ${addednum+2}">
     </div>
     
-    <h2> <span id="${addednum + 2}span" class="badge badge-secondary">Value</span></h2>
+    <h2> <span id="${addednum + 2}span" class="badge badge-secondary">₹ 0</span></h2>
     
     <div class="col-auto my-1">
         <button id="btn${addednum + 2}" class="btn btn-primary cal"><img src="https://img.icons8.com/ios-filled/50/ffffff/checked.png" style="height: 28px;"/> <b>CALCULATE</b></button>
     </div>
     
     <div class="col-auto my-1 ">
-                    <button  class="btn btn-outline-danger remove">Remove row</button>
+                    <button  class="btn btn-outline-danger remove">Remove</button>
                 </div>
 </div>
     `
