@@ -76,7 +76,7 @@ let plus = document.getElementById('plus');
 // console.log(plus);
 plus.addEventListener('click', (e) => {
     e.preventDefault();
-    let k = prompt("ENTER THE NO OF ITEMS YOU WANT TO ENTER");
+    let k = prompt("ENTER THE NO OF\nITEMS YOU WANT TO ENTER");
     // const k1 = k;
     console.log((k));
     for (let i = 1; i < k; i++) {
