@@ -76,7 +76,7 @@ let plus = document.getElementById('plus');
 // console.log(plus);
 plus.addEventListener('click', (e) => {
     e.preventDefault();
-    let k = prompt("enter the no.of tables you want");
+    let k = prompt("ENTER THE NO OF\nITEMS YOU WANT TO ENTER");
     // const k1 = k;
     console.log((k));
     for (let i = 1; i < k; i++) {
@@ -85,19 +85,21 @@ plus.addEventListener('click', (e) => {
     <div class="form-row align-items-center " >
     <div class="col-sm-3 my-1">
         
-        <input type="number" class="form-control" id="quantity${addednum+2}" placeholder="Enter the quantity${addednum+2}">
+        <input type="number" class="form-control" id="quantity${addednum+2}" placeholder="Enter the quantity for item ${addednum+2}">
     </div>
     <div class="col-sm-3 my-1">
         
-        <input type="number" class="form-control" id="rate${addednum+2}" placeholder="Enter the rate${addednum+2}">
+        <input type="number" class="form-control" id="rate${addednum+2}" placeholder="Enter the rate for item ${addednum+2}">
     </div>
+    
+    <h2> <span id="${addednum + 2}span" class="badge badge-secondary">₹ 0</span></h2>
+    
     <div class="col-auto my-1">
-        <button id="btn${addednum + 2}" class="btn btn-primary cal">cal</button>
+        <button id="btn${addednum + 2}" class="btn btn-primary cal"><img src="https://img.icons8.com/ios-filled/50/ffffff/checked.png" style="height: 28px;"/> <b>CALCULATE</b></button>
     </div>
-    <h2> <span id="${addednum + 2}span" class="badge badge-secondary">Value</span></h2>
     
     <div class="col-auto my-1 ">
-                    <button  class="btn btn-outline-danger remove">Remove row</button>
+                    <button  class="btn btn-outline-danger remove">Remove</button>
                 </div>
 </div>
     `
