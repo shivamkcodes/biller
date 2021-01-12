@@ -41,9 +41,6 @@ function calculate(quantity, rate, span, i) {
     // let tbval = getElementfromString(tbstr);
     tbody.innerHTML += tbstr;
     // tbody.appendChild(tbval);
-
-
-
 }
 
 
@@ -56,6 +53,7 @@ btn1.addEventListener('click', (e) => {
     let quantity1 = document.getElementById('quantity1');
     let rate1 = document.getElementById('rate1');
     let span1 = document.getElementById('1span');
+    
     span1.innerHTML = mult(quantity1.value, rate1.value);
     let tbody = document.getElementById('tbody');
     let tbstr = `<tr>
